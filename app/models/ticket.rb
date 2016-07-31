@@ -1,6 +1,6 @@
 class Ticket < ActiveRecord::Base
-	validates_presence_of :user_id, :event_id
-	validates_uniqueness_of :unique_identifier
+  validates_presence_of :user_id, :event_id
+  validates_uniqueness_of :unique_identifier
   before_create :set_identifier
 
   private
