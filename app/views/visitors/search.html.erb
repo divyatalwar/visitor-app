@@ -1,0 +1,9 @@
+
+<%if params[:search].present? %>
+	<div>
+	  Visitor Count at <%= @time.strftime("%A, %d %b %Y %l:%M %p") %> is : <%= @visitor_count.to_i %><br/>
+	</div>
+<%end%>
+<div>
+  <%= render template: 'home/index' %>
+</div>

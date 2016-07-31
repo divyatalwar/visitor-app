@@ -1,0 +1,4 @@
+<%= form_tag({controller: "visitors", action: "search"}, method: "get")  do  %>
+ <%= render partial: 'widgets/timepicker' %>
+ <%= submit_tag :submit %>
+<%end%>
