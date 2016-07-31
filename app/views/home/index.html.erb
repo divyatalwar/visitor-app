@@ -1,3 +1,6 @@
+<%if flash[:notice].present? %>
+  <%= flash[:notice] %>
+<%end%>
 <%= form_tag({controller: "visitors", action: "search"}, method: "get")  do  %>
   <div style="text-align: center;margin-top: 14%;">
    <%= render partial: 'widgets/timepicker' %>
