@@ -11,7 +11,7 @@ class VisitorsController < ApplicationController
 
   def validate_params
     @time = DateTime.parse(params[:search]) rescue nil
-    redirect_to visitors_search_path, notice: 'Invalid Datetime' unless @time.present?
+    redirect_to root_path, notice: 'Invalid Datetime' unless @time.present?
   end
 
 end
